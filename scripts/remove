@@ -10,7 +10,7 @@ source /usr/share/yunohost/helpers
 # REMOVE SYSTEM CONFIGURATIONS
 #=================================================
 
-if ynh_hide_warnings yunohost service status "$app-daemon" >/dev/null;
+if ynh_hide_warnings yunohost service status "$app-daemon" >/dev/null
 then
 	ynh_script_progression "Removing $app service integration..."
 	yunohost service remove "$app-daemon"
